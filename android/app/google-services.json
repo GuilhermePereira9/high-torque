@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "535484628932",
-    "project_id": "virtual-store-34a2d",
-    "storage_bucket": "virtual-store-34a2d.appspot.com"
+    "project_number": "76157325245",
+    "project_id": "high-torque",
+    "storage_bucket": "high-torque.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:535484628932:android:c7db6eeb8a9cc753f12e91",
+        "mobilesdk_app_id": "1:76157325245:android:08e0176e61b37f8d3eccd4",
         "android_client_info": {
           "package_name": "violentyDev.virtual_store"
         }
       },
       "oauth_client": [
         {
-          "client_id": "535484628932-fmq756r2uinhld1pqi9nf4fheeudmtnv.apps.googleusercontent.com",
+          "client_id": "76157325245-su6aj5nqdhrokv05608qpvj70kotuv0u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0os5KKgCN940ANmOZLgHAF27mvoWgalw"
+          "current_key": "AIzaSyCxk9Hiv6iYTOHgZ6QHSXIWpuevGpab2cg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "535484628932-fmq756r2uinhld1pqi9nf4fheeudmtnv.apps.googleusercontent.com",
+              "client_id": "76157325245-su6aj5nqdhrokv05608qpvj70kotuv0u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
