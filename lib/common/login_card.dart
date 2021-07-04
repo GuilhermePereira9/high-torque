@@ -5,6 +5,7 @@ class LoginCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         margin: const EdgeInsets.all(16),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(16, 4, 16, 4),

@@ -13,7 +13,8 @@ class OrderTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final primaryColor = Theme.of(context).primaryColor;
     return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: ExpansionTile(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -44,7 +45,7 @@ class OrderTile extends StatelessWidget {
                       ? Colors.red
                       : primaryColor,
                   fontSize: 14),
-            )
+            ),
           ],
         ),
         children: <Widget>[
@@ -52,6 +53,14 @@ class OrderTile extends StatelessWidget {
             children: order.items.map((e) {
               return OrderProductTile(e);
             }).toList(),
+          ),
+          Text(
+            'Ordem de Serviço aberta em: ${order.date.toDate()}',
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+              color: Colors.black,
+              fontSize: 12,
+            ),
           ),
           if (showControls && order.status != Status.canceled)
             SizedBox(
@@ -94,7 +103,7 @@ class OrderTile extends StatelessWidget {
                       }),
                 ],
               ),
-            )
+            ),
         ],
       ),
     );

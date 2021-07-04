@@ -15,6 +15,8 @@ class ConfirmationScreen extends StatelessWidget {
       ),
       body: Center(
         child: Card(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           margin: const EdgeInsets.all(16),
           child: ListView(
             shrinkWrap: true,

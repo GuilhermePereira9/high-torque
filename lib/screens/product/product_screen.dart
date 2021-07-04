@@ -125,7 +125,7 @@ class ProductScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 8, bottom: 8),
                       child: Text(
-                        'Tamanhos',
+                        'Tipo',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,

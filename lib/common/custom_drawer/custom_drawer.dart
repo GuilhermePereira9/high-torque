@@ -14,7 +14,7 @@ class CustomDrawer extends StatelessWidget {
             decoration: BoxDecoration(
                 gradient: LinearGradient(
               colors: [
-                const Color.fromARGB(255, 211, 118, 130),
+                const Color.fromARGB(255, 142, 142, 142),
                 Colors.white,
               ],
               begin: Alignment.topCenter,
@@ -32,12 +32,12 @@ class CustomDrawer extends StatelessWidget {
               ),
               DrawerTile(
                 iconData: Icons.list,
-                title: 'Produtos',
+                title: 'Serviços',
                 page: 1,
               ),
               DrawerTile(
                 iconData: Icons.playlist_add_check,
-                title: 'Meus Pedidos',
+                title: 'Ordens de Serviço',
                 page: 2,
               ),
               DrawerTile(
@@ -58,7 +58,7 @@ class CustomDrawer extends StatelessWidget {
                         ),
                         DrawerTile(
                           iconData: Icons.settings,
-                          title: 'Pedidos',
+                          title: 'Serviços',
                           page: 5,
                         ),
                       ],

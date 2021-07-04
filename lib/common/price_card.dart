@@ -16,6 +16,7 @@ class PriceCard extends StatelessWidget {
     final totalPrice = cartManager.totalPrice;
 
     return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),

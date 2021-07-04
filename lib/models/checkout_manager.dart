@@ -30,8 +30,6 @@ class CheckOutManager extends ChangeNotifier {
       return;
     }
 
-    //TODO: Procesar pagamento
-
     final orderId = await _getOrderId();
 
     final order = Order.fromCartManager(cartManager);

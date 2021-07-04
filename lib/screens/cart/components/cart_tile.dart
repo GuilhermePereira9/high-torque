@@ -18,6 +18,8 @@ class CartTile extends StatelessWidget {
         },
         child: Card(
           margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Row(
@@ -44,7 +46,7 @@ class CartTile extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8),
                         child: Text(
-                          'Tamanho: ${cartProduct.size}',
+                          'Tipo: ${cartProduct.size}',
                           style: TextStyle(fontWeight: FontWeight.w500),
                         ),
                       ),

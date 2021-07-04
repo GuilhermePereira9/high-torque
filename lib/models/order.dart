@@ -3,7 +3,7 @@ import 'package:virtual_store/models/address.dart';
 import 'package:virtual_store/models/cart_manager.dart';
 import 'package:virtual_store/models/cart_product.dart';
 
-enum Status { canceled, preparing, transporting, delivered }
+enum Status { canceled, preparing, waiting, executing, delivered }
 
 class Order {
   Order.fromCartManager(CartManager cartManager) {
@@ -48,7 +48,7 @@ class Order {
   }
 
   Function() get back {
-    return status.index >= Status.transporting.index
+    return status.index >= Status.executing.index
         ? () {
             status = Status.values[status.index - 1];
             firestoreRef.updateData({'status': status.index});
@@ -57,7 +57,7 @@ class Order {
   }
 
   Function() get advance {
-    return status.index <= Status.transporting.index
+    return status.index <= Status.executing.index
         ? () {
             status = Status.values[status.index + 1];
             firestoreRef.updateData({'status': status.index});
@@ -93,10 +93,12 @@ class Order {
         return 'Cancelado';
       case Status.preparing:
         return 'Em preparação';
-      case Status.transporting:
-        return 'Em transporte';
+      case Status.waiting:
+        return 'Aguardando Peças';
+      case Status.executing:
+        return 'Serviço em Andamento!';
       case Status.delivered:
-        return 'Entregue';
+        return 'Serviço Finalizado';
       default:
         return '';
     }

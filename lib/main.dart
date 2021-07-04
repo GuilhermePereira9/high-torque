@@ -73,11 +73,12 @@ class MyApp extends StatelessWidget {
           title: 'High Torque',
           theme: ThemeData(
             //primaryColor: const Color.fromARGB(255, 4, 125, 141),
-            primaryColor: const Color.fromARGB(255, 211, 118, 130),
-            scaffoldBackgroundColor: const Color.fromARGB(255, 211, 118, 130),
+            primaryColor: const Color.fromARGB(255, 255, 0, 0),
+            scaffoldBackgroundColor: const Color.fromARGB(255, 142, 142, 142),
             appBarTheme: const AppBarTheme(elevation: 0),
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
+          initialRoute: '/base',
           onGenerateRoute: (settings) {
             switch (settings.name) {
               case '/login':
@@ -105,7 +106,7 @@ class MyApp extends StatelessWidget {
                 return MaterialPageRoute(
                     builder: (_) =>
                         ConfirmationScreen(settings.arguments as Order));
-              case '/':
+              case '/base':
               default:
                 return MaterialPageRoute(
                     builder: (_) => BaseScreen(), settings: settings);

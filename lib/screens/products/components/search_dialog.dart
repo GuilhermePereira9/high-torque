@@ -14,6 +14,8 @@ class SearchDialog extends StatelessWidget {
             left: 4,
             right: 4,
             child: Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)),
               child: TextFormField(
                 initialValue: initialText,
                 textInputAction: TextInputAction.search,

@@ -35,7 +35,7 @@ class OrderProductTile extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
                   ),
                   Text(
-                    'Tamanho: ${cartProduct.size}',
+                    'Tipo: ${cartProduct.size}',
                     style: TextStyle(
                       fontWeight: FontWeight.w300,
                     ),

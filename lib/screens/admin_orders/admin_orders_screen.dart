@@ -21,7 +21,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
     return Scaffold(
       drawer: CustomDrawer(),
       appBar: AppBar(
-        title: const Text('Pedidos'),
+        title: const Text('Serviços'),
         centerTitle: true,
       ),
       body: Consumer<AdminOrdersManager>(
@@ -39,7 +39,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
                       children: <Widget>[
                         Expanded(
                           child: Text(
-                            'Pedidos de ${ordersManager.userFilter.name}',
+                            'Serviços de ${ordersManager.userFilter.name}',
                             style: TextStyle(
                               fontWeight: FontWeight.w800,
                               color: Colors.white,
@@ -59,7 +59,7 @@ class _AdminOrdersScreenState extends State<AdminOrdersScreen> {
                 if (filteredOrders.isEmpty)
                   Expanded(
                     child: EmptyCard(
-                      title: 'Nenhuma venda realizada!',
+                      title: 'Nenhum Serviço em Aberto!',
                       iconData: Icons.border_clear,
                     ),
                   )

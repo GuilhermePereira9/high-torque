@@ -13,7 +13,7 @@ class CancelOrderDialog extends StatelessWidget {
       content: const Text('Esta ação não poderá ser defeita!'),
       actions: <Widget>[
         TextButton(
-            child: const Text('Cancelar Pedido'),
+            child: const Text('Cancelar Serviço'),
             onPressed: () {
               order.cancel();
               Navigator.of(context).pop();
