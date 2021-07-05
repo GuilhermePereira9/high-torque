@@ -5,7 +5,8 @@ Esse foi baseado em na oficina High Torque.
 Nessa versão, como usuario voce pode: Gerar uma OS adquirindo um serviço, apos criação de conta no app.
 Acompanhar sua OS.
 
-Como ADM, esta liberado personalização completa na paginas, e pode acompanhar e gerir todos os pedidos e usuarios.
+Como ADM, esta liberado personalização completa na paginas para isso basta clicar no ICONE no canto superior direito, e gerenciamento todos os serviços e usuarios.
+Na tela inicial pode ser criado mais listas ou grades, e cada imagem pode ser vinculada a um serviço.
 
 O app esta usuando Firebase como BD.
 
