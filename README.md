@@ -1,10 +1,17 @@
 High Torque
 
-An App for the High Torque (Car Service) created with Flutter. I'm using Firebase as DB
+Esse foi baseado em na oficina High Torque. 
+
+Nessa versão, como usuario voce pode: Gerar uma OS adquirindo um serviço, apos criação de conta no app.
+Acompanhar sua OS.
+
+Como ADM, esta liberado personalização completa na paginas, e pode acompanhar e gerir todos os pedidos e usuarios.
+
+O app esta usuando Firebase como BD.
 
 To run the app
 
-Just need to run - flutter pub get
+flutter pub get
 
 ![Screenshot_1625489484](https://user-images.githubusercontent.com/69984151/124478358-7e9f0a00-dd7b-11eb-916f-94dcf6ed8636.png)
 ![Screenshot_1625489489](https://user-images.githubusercontent.com/69984151/124478363-7fd03700-dd7b-11eb-9938-b86fdf6577b6.png)
