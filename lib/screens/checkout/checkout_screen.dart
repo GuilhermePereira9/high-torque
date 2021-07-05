@@ -48,14 +48,14 @@ class CheckOutScreen extends StatelessWidget {
               return ListView(
                 children: <Widget>[
                   PriceCard(
-                    buttonText: 'Finalizar Pedido',
+                    buttonText: 'Abrir Ordem de Serviço',
                     onPressed: () {
                       checkOutManager.checkOut(onStockFail: (e) {
                         Navigator.of(context).popUntil(
                             (route) => route.settings.name == '/cart');
                       }, onSucess: (order) {
-                        Navigator.of(context).popUntil(
-                            (route) => route.settings.name == '/base');
+                        Navigator.of(context)
+                            .popUntil((route) => route.settings.name == '/');
                         Navigator.of(context)
                             .pushNamed('/confirmation', arguments: order);
                       });

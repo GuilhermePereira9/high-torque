@@ -13,7 +13,7 @@ class ItemDeleteDialog extends StatelessWidget {
       content: const Text('Esta ação não poderá ser defeita!'),
       actions: <Widget>[
         TextButton(
-            child: const Text('Excluir Pedido'),
+            child: const Text('Excluir Anuncio'),
             onPressed: () {
               product.delete();
               Navigator.of(context).pop();

@@ -23,7 +23,7 @@ class CartScreen extends StatelessWidget {
           if (cartManager.items.isEmpty) {
             return EmptyCard(
               iconData: Icons.remove_shopping_cart,
-              title: 'Nenhum produto no carrinho!',
+              title: 'Nenhum serviço no carrinho!',
             );
           }
           return ListView(children: <Widget>[
@@ -33,7 +33,7 @@ class CartScreen extends StatelessWidget {
                   .toList(),
             ),
             PriceCard(
-              buttonText: 'Continuar para Entrega',
+              buttonText: 'Continuar',
               onPressed: cartManager.isCartValid
                   ? () {
                       Navigator.of(context).pushNamed('/address');

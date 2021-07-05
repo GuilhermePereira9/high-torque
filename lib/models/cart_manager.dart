@@ -153,7 +153,7 @@ class CartManager extends ChangeNotifier {
       loading = false;
     } else {
       loading = false;
-      return Future.error('Endereço fora do raio de entrega :()');
+      return Future.error('Endereço fora do raio de atuação :()');
     }
   }
 

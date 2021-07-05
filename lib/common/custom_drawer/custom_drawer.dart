@@ -40,11 +40,6 @@ class CustomDrawer extends StatelessWidget {
                 title: 'Ordens de Serviço',
                 page: 2,
               ),
-              DrawerTile(
-                iconData: Icons.location_on,
-                title: 'Lojas',
-                page: 3,
-              ),
               Consumer<UserManager>(
                 builder: (_, userManager, __) {
                   if (userManager.adminEnable) {
@@ -54,12 +49,12 @@ class CustomDrawer extends StatelessWidget {
                         DrawerTile(
                           iconData: Icons.settings,
                           title: 'Usuarios',
-                          page: 4,
+                          page: 3,
                         ),
                         DrawerTile(
                           iconData: Icons.settings,
                           title: 'Serviços',
-                          page: 5,
+                          page: 4,
                         ),
                       ],
                     );

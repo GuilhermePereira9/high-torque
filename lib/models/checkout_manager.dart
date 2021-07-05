@@ -56,7 +56,7 @@ class CheckOutManager extends ChangeNotifier {
       return result['orderId'] as int;
     } catch (e) {
       debugPrint(e.toString());
-      return Future.error('Falha ao gerar numero do pedido');
+      return Future.error('Falha ao gerar numero da OS');
     }
   }
 

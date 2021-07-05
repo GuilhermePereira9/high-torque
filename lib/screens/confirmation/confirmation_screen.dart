@@ -10,7 +10,7 @@ class ConfirmationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pedido Confimado'),
+        title: const Text('Ordem de Serviço Aberta'),
         centerTitle: true,
       ),
       body: Center(
